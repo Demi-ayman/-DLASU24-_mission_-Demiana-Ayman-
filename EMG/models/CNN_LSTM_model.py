@@ -50,7 +50,7 @@ model.compile(optimizer='adam', loss='mean_squared_error', metrics=['mae'])
 model.summary()
 
 # Modify y_train and y_val to match the output shape (if necessary)
-y_train = y_train[:, -1, :]  # Use only the last timestep
+y_train = y_train[:, -1, :]  
 y_val = y_val[:, -1, :]
 
 # Train the model
